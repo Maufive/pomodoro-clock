@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  background-color: coral;
+  color: #fff;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+}
+
+.containerer {
+  margin-top: 10vh;
+  height: 100%;
+}
+
+#pie {
+  max-height: 150x;
+  max-width: 300px;
+  min-height: 75px;
+  min-width: 150px;
+}
+
+.panel {
+  display: inline-flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.wrap {
+  height: 20vh;
+  width: 30vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.controller {
+  display: inline-flex;
+  align-items: center;
+}
+
+.controller h3 {
+  display: flex;
+  align-self: flex-start;
+}
+
+.decrease, .increase {
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  background: #FF9872;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin: 0 20px 0 20px;
+  transition: all 0.3s;
+}
+
+.decrease:hover, .increase:hover {
+  transform: scale(1.2);
+  background: #ffb69c;
+}
+
+.start_break, .start_session {
+  background: coral;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #fff;
+  transition: all 0.3s;
+  font-size: 14px;
+  margin-top: 25px;
+  outline: none;
+}
+
+.start_break:hover, .start_session:hover {
+  transform: scale(1.1);
+  background: #fff;
+  color: coral;
+}
+
+.formDiv {
+
+}
+
+.form {
+  height: 25px;
+  width: 150px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-size: 20px;
+  outline: none;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .start_break, .start_session {
+    font-size: 12px;
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+  .panel {
+    align-items: flex-end;
+    position: relative;
+  }
+  .wrap {
+    align-items: flex-end;
+    align-self: flex-end;
+  }
+  #pie {
+    display: flex;
+    padding-bottom: 20vh;
+    align-items: flex-start;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 696px) {
+
+}
+
+}
