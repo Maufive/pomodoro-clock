@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://use.fontawesome.com/f73dd3f2a3.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pomodoro timer </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <audio id="workWork">
+  <source src="work-work.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="jobsDone">
+  <source src="jobs-done.mp3" type="audio/mpeg" />
+</audio>
+  <div class="containerer">
+    <h1 class="title">Pomodoro timer</h1>
+
+    <div class="panel">
+
+      <div class="wrap" style="margin-right:10vh">
+        <h3>Brake length</h3>
+        <div class="controller">
+          <button class="decrease_break decrease">-</button>
+          <h3 class="breakTimer">0:00</h3>
+          <button class="increase_break increase">+</button>
+        </div>
+        <button class="start_break"><i class="fa fa-coffee" style="padding-left:5px"></i>  START BREAK</button>
+      </div>
+
+      <!-- PIE TIMER GOES HERE -->
+      <div id="pie"></div>
+      <!-- END OF PIE TIMER -->
+
+      <div class="wrap" style="margin-left:10vh">
+        <h3>Session length</h3>
+        <div class="controller">
+          <button class="decrease_session decrease">-</button>
+          <h3 class="sessionTimer">0</h3>
+          <button class="increase_session increase">+</button>
+        </div>
+        <button class="start_session">START SESSION</button>
+      </div>
+    </div>
+
+    <div class="display">
+      <h1 class="display__time-left"></h1>
+      <p class="display__end-time"></p>
+    </div>
+    
+    <div class="formDiv">
+      <form name="customForm" id="custom">
+        <input class="form" type="text" name="minutes" placeholder="Enter minutes">
+      </form>
+    </div>
+  </div>
+
+
+
+<script src="scripts/progressbar.js"></script>
+<script src="scripts/app.js"></script>
+</body>
+</html>
